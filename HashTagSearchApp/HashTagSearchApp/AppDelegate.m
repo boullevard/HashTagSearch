@@ -14,19 +14,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-
-  //  2. Add to your application's window a new UIViewController subclass called SearchViewController (with an xib) inside of a UINavigationController
     SearchViewController *viewController = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
     
     // Create a UINavigationController so we have forward/backward navigation capability
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     [self.window setRootViewController:navigationController];
-    
     [self.window makeKeyAndVisible];
 
-
     return YES;
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
