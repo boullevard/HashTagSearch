@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FD3EA2218D9F716001B87ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD3EA2118D9F716001B87ED /* Foundation.framework */; };
+		0FD3EA2418D9F716001B87ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD3EA2318D9F716001B87ED /* CoreGraphics.framework */; };
+		0FD3EA2618D9F716001B87ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD3EA2518D9F716001B87ED /* UIKit.framework */; };
+		0FD3EA2C18D9F716001B87ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD3EA2A18D9F716001B87ED /* InfoPlist.strings */; };
+		0FD3EA2E18D9F716001B87ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EA2D18D9F716001B87ED /* main.m */; };
+		0FD3EA3218D9F716001B87ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EA3118D9F716001B87ED /* AppDelegate.m */; };
+		0FD3EA3418D9F716001B87ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD3EA3318D9F716001B87ED /* Images.xcassets */; };
+		0FD3EA3B18D9F716001B87ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD3EA3A18D9F716001B87ED /* XCTest.framework */; };
+		0FD3EA3C18D9F716001B87ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD3EA2118D9F716001B87ED /* Foundation.framework */; };
+		0FD3EA3D18D9F716001B87ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD3EA2518D9F716001B87ED /* UIKit.framework */; };
+		0FD3EA4518D9F716001B87ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FD3EA4318D9F716001B87ED /* InfoPlist.strings */; };
+		0FD3EA4718D9F716001B87ED /* HashTagSearchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EA4618D9F716001B87ED /* HashTagSearchAppTests.m */; };
+		0FD3EA5318D9F7F0001B87ED /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EA5118D9F7F0001B87ED /* SearchViewController.m */; };
+		0FD3EA5418D9F7F0001B87ED /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD3EA5218D9F7F0001B87ED /* SearchViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FD3EA3E18D9F716001B87ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FD3EA1618D9F716001B87ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FD3EA1D18D9F716001B87ED;
+			remoteInfo = HashTagSearchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FD3EA1E18D9F716001B87ED /* HashTagSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HashTagSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD3EA2118D9F716001B87ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0FD3EA2318D9F716001B87ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0FD3EA2518D9F716001B87ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0FD3EA2918D9F716001B87ED /* HashTagSearchApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HashTagSearchApp-Info.plist"; sourceTree = "<group>"; };
+		0FD3EA2B18D9F716001B87ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FD3EA2D18D9F716001B87ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FD3EA2F18D9F716001B87ED /* HashTagSearchApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HashTagSearchApp-Prefix.pch"; sourceTree = "<group>"; };
+		0FD3EA3018D9F716001B87ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FD3EA3118D9F716001B87ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FD3EA3318D9F716001B87ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0FD3EA3918D9F716001B87ED /* HashTagSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashTagSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD3EA3A18D9F716001B87ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0FD3EA4218D9F716001B87ED /* HashTagSearchAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HashTagSearchAppTests-Info.plist"; sourceTree = "<group>"; };
+		0FD3EA4418D9F716001B87ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FD3EA4618D9F716001B87ED /* HashTagSearchAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashTagSearchAppTests.m; sourceTree = "<group>"; };
+		0FD3EA5018D9F7F0001B87ED /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		0FD3EA5118D9F7F0001B87ED /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		0FD3EA5218D9F7F0001B87ED /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FD3EA1B18D9F716001B87ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD3EA2418D9F716001B87ED /* CoreGraphics.framework in Frameworks */,
+				0FD3EA2618D9F716001B87ED /* UIKit.framework in Frameworks */,
+				0FD3EA2218D9F716001B87ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD3EA3618D9F716001B87ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD3EA3B18D9F716001B87ED /* XCTest.framework in Frameworks */,
+				0FD3EA3D18D9F716001B87ED /* UIKit.framework in Frameworks */,
+				0FD3EA3C18D9F716001B87ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD3EA1518D9F716001B87ED = {
+			isa = PBXGroup;
+			children = (
+				0FD3EA2718D9F716001B87ED /* HashTagSearchApp */,
+				0FD3EA4018D9F716001B87ED /* HashTagSearchAppTests */,
+				0FD3EA2018D9F716001B87ED /* Frameworks */,
+				0FD3EA1F18D9F716001B87ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FD3EA1F18D9F716001B87ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FD3EA1E18D9F716001B87ED /* HashTagSearchApp.app */,
+				0FD3EA3918D9F716001B87ED /* HashTagSearchAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FD3EA2018D9F716001B87ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD3EA2118D9F716001B87ED /* Foundation.framework */,
+				0FD3EA2318D9F716001B87ED /* CoreGraphics.framework */,
+				0FD3EA2518D9F716001B87ED /* UIKit.framework */,
+				0FD3EA3A18D9F716001B87ED /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FD3EA2718D9F716001B87ED /* HashTagSearchApp */ = {
+			isa = PBXGroup;
+			children = (
+				0FD3EA3018D9F716001B87ED /* AppDelegate.h */,
+				0FD3EA3118D9F716001B87ED /* AppDelegate.m */,
+				0FD3EA3318D9F716001B87ED /* Images.xcassets */,
+				0FD3EA2818D9F716001B87ED /* Supporting Files */,
+				0FD3EA5018D9F7F0001B87ED /* SearchViewController.h */,
+				0FD3EA5118D9F7F0001B87ED /* SearchViewController.m */,
+				0FD3EA5218D9F7F0001B87ED /* SearchViewController.xib */,
+			);
+			path = HashTagSearchApp;
+			sourceTree = "<group>";
+		};
+		0FD3EA2818D9F716001B87ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FD3EA2918D9F716001B87ED /* HashTagSearchApp-Info.plist */,
+				0FD3EA2A18D9F716001B87ED /* InfoPlist.strings */,
+				0FD3EA2D18D9F716001B87ED /* main.m */,
+				0FD3EA2F18D9F716001B87ED /* HashTagSearchApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FD3EA4018D9F716001B87ED /* HashTagSearchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FD3EA4618D9F716001B87ED /* HashTagSearchAppTests.m */,
+				0FD3EA4118D9F716001B87ED /* Supporting Files */,
+			);
+			path = HashTagSearchAppTests;
+			sourceTree = "<group>";
+		};
+		0FD3EA4118D9F716001B87ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FD3EA4218D9F716001B87ED /* HashTagSearchAppTests-Info.plist */,
+				0FD3EA4318D9F716001B87ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FD3EA1D18D9F716001B87ED /* HashTagSearchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD3EA4A18D9F716001B87ED /* Build configuration list for PBXNativeTarget "HashTagSearchApp" */;
+			buildPhases = (
+				0FD3EA1A18D9F716001B87ED /* Sources */,
+				0FD3EA1B18D9F716001B87ED /* Frameworks */,
+				0FD3EA1C18D9F716001B87ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HashTagSearchApp;
+			productName = HashTagSearchApp;
+			productReference = 0FD3EA1E18D9F716001B87ED /* HashTagSearchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FD3EA3818D9F716001B87ED /* HashTagSearchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD3EA4D18D9F716001B87ED /* Build configuration list for PBXNativeTarget "HashTagSearchAppTests" */;
+			buildPhases = (
+				0FD3EA3518D9F716001B87ED /* Sources */,
+				0FD3EA3618D9F716001B87ED /* Frameworks */,
+				0FD3EA3718D9F716001B87ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FD3EA3F18D9F716001B87ED /* PBXTargetDependency */,
+			);
+			name = HashTagSearchAppTests;
+			productName = HashTagSearchAppTests;
+			productReference = 0FD3EA3918D9F716001B87ED /* HashTagSearchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FD3EA1618D9F716001B87ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nabil Mouzannar";
+				TargetAttributes = {
+					0FD3EA3818D9F716001B87ED = {
+						TestTargetID = 0FD3EA1D18D9F716001B87ED;
+					};
+				};
+			};
+			buildConfigurationList = 0FD3EA1918D9F716001B87ED /* Build configuration list for PBXProject "HashTagSearchApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0FD3EA1518D9F716001B87ED;
+			productRefGroup = 0FD3EA1F18D9F716001B87ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FD3EA1D18D9F716001B87ED /* HashTagSearchApp */,
+				0FD3EA3818D9F716001B87ED /* HashTagSearchAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FD3EA1C18D9F716001B87ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD3EA2C18D9F716001B87ED /* InfoPlist.strings in Resources */,
+				0FD3EA3418D9F716001B87ED /* Images.xcassets in Resources */,
+				0FD3EA5418D9F7F0001B87ED /* SearchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD3EA3718D9F716001B87ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD3EA4518D9F716001B87ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FD3EA1A18D9F716001B87ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD3EA3218D9F716001B87ED /* AppDelegate.m in Sources */,
+				0FD3EA5318D9F7F0001B87ED /* SearchViewController.m in Sources */,
+				0FD3EA2E18D9F716001B87ED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD3EA3518D9F716001B87ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD3EA4718D9F716001B87ED /* HashTagSearchAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FD3EA3F18D9F716001B87ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FD3EA1D18D9F716001B87ED /* HashTagSearchApp */;
+			targetProxy = 0FD3EA3E18D9F716001B87ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FD3EA2A18D9F716001B87ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FD3EA2B18D9F716001B87ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0FD3EA4318D9F716001B87ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FD3EA4418D9F716001B87ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FD3EA4818D9F716001B87ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FD3EA4918D9F716001B87ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FD3EA4B18D9F716001B87ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HashTagSearchApp/HashTagSearchApp-Prefix.pch";
+				INFOPLIST_FILE = "HashTagSearchApp/HashTagSearchApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0FD3EA4C18D9F716001B87ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HashTagSearchApp/HashTagSearchApp-Prefix.pch";
+				INFOPLIST_FILE = "HashTagSearchApp/HashTagSearchApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0FD3EA4E18D9F716001B87ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HashTagSearchApp.app/HashTagSearchApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HashTagSearchApp/HashTagSearchApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HashTagSearchAppTests/HashTagSearchAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0FD3EA4F18D9F716001B87ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HashTagSearchApp.app/HashTagSearchApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HashTagSearchApp/HashTagSearchApp-Prefix.pch";
+				INFOPLIST_FILE = "HashTagSearchAppTests/HashTagSearchAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FD3EA1918D9F716001B87ED /* Build configuration list for PBXProject "HashTagSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD3EA4818D9F716001B87ED /* Debug */,
+				0FD3EA4918D9F716001B87ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FD3EA4A18D9F716001B87ED /* Build configuration list for PBXNativeTarget "HashTagSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD3EA4B18D9F716001B87ED /* Debug */,
+				0FD3EA4C18D9F716001B87ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0FD3EA4D18D9F716001B87ED /* Build configuration list for PBXNativeTarget "HashTagSearchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD3EA4E18D9F716001B87ED /* Debug */,
+				0FD3EA4F18D9F716001B87ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FD3EA1618D9F716001B87ED /* Project object */;
+}
