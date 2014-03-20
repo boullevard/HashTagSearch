@@ -13,11 +13,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     SearchViewController *viewController = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
+    viewController.title = @"Sample HashTag Search App";
     
     // Create a UINavigationController so we have forward/backward navigation capability
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+   
     [self.window setRootViewController:navigationController];
     [self.window makeKeyAndVisible];
 

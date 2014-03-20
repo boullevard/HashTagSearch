@@ -8,7 +8,10 @@
 
 #import "SearchViewController.h"
 
-@interface SearchViewController ()
+@interface SearchViewController () <UISearchBarDelegate>
+
+@property (nonatomic, strong) NSString *userInputSearchText;
+@property (nonatomic, strong) NSString *userSavedInputSearchText;
 
 @end
 
@@ -19,7 +22,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        NSLog(@"my Search View controller initialized");
+          NSLog(@"retrieveSearchTextFromNSUSerDefaults %@",self.retrieveSearchTextFromNSUSerDefaults);
     }
     return self;
 }
@@ -28,9 +31,27 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"my Search View controller Loaded");
+    NSLog(@"when did the view Load ?");
+
 }
 
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{ // called when keyboard search button pressed
+    self.userInputSearchText = searchBar.text;
+    [self saveSearchTextToNSUSerDefaults: self.userInputSearchText];
+}
+
+- (void) saveSearchTextToNSUSerDefaults:(NSString *) searchText{
+    NSUserDefaults *searches = [NSUserDefaults standardUserDefaults]; //why couldnt i init this in viewDidLoad
+    [searches setObject:searchText forKey:@"searchText"];
+    [searches synchronize];
+    NSLog(@"saveSearchTextToNSUSerDefaults userInputSearchText: %@.",searchText);
+}
+
+- (NSString *) retrieveSearchTextFromNSUSerDefaults {
+    NSUserDefaults *searches = [NSUserDefaults standardUserDefaults];
+    self.userSavedInputSearchText = [searches stringForKey:@"searchText"];
+    return self.userSavedInputSearchText;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
