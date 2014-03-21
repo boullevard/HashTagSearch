@@ -10,7 +10,7 @@
 
 @interface TweetsController : NSObject
 
-- (void)fetchPopularMediaWithCompletionBlock:(void (^)(BOOL success))completionBlock;
+- (void)fetchTweetsWithCompletionBlock:(void (^)(BOOL success))completionBlock;
 
 
 @end

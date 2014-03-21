@@ -40,7 +40,7 @@
 
 - (void)updateContent
 {
-    [self.tweetsController fetchPopularMediaWithCompletionBlock:^(BOOL success) {
+    [self.tweetsController fetchTweetsWithCompletionBlock:^(BOOL success) {
         //   how are we getting : self.mediaObjects ? we re not! we know that we have it and is successful in mediaController
         
         //dispatch the logic in this block to the main queue ie: thread (called Grand Central Dispatch)

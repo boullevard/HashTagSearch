@@ -22,12 +22,12 @@
     return self;
 }
 
-- (void)fetchPopularMediaWithCompletionBlock:(void (^)(BOOL success))completionBlock
+- (void)fetchTweetsWithCompletionBlock:(void (^)(BOOL success))completionBlock
 {
     NSString *twitterEndpoint = @"https://api.twitter.com/1.1/search/tweets.json?q=sxsw";
     
     NSURL *URL = [NSURL URLWithString:twitterEndpoint];
-    NSLog(@"fetchPopularMediaWithCompletionBlock");
+    NSLog(@"fetchTweetsWithCompletionBlock");
     // 1. Get a reference to the shared NSURLSession
     NSURLSession *session = [NSURLSession sharedSession];
     // 2. Invoke the dataTaskWithURL:completionHandler: method on the shared NSURLSession
