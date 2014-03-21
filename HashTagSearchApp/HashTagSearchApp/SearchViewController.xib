@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
             <connections>
+                <outlet property="searchBar" destination="Nqu-1Z-xhP" id="yPT-MX-zDu"/>
+                <outlet property="tableView" destination="Kl0-iV-kuh" id="jEE-11-O0b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,13 +25,17 @@
                         <string>Title</string>
                     </scopeButtonTitles>
                     <connections>
-                        <outlet property="delegate" destination="-1" id="LSV-Nu-wf5"/>
+                        <outlet property="delegate" destination="-1" id="zLT-1V-6bg"/>
                     </connections>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kl0-iV-kuh">
                     <rect key="frame" x="0.0" y="112" width="320" height="456"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fpz-dd-xYL"/>
+                        <outlet property="delegate" destination="-1" id="IFa-gr-yWL"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
