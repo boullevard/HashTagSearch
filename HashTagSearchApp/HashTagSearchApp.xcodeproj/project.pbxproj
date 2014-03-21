@@ -21,6 +21,9 @@
 		0FD3EA4718D9F716001B87ED /* HashTagSearchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EA4618D9F716001B87ED /* HashTagSearchAppTests.m */; };
 		0FD3EA5318D9F7F0001B87ED /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EA5118D9F7F0001B87ED /* SearchViewController.m */; };
 		0FD3EA5418D9F7F0001B87ED /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD3EA5218D9F7F0001B87ED /* SearchViewController.xib */; };
+		0FD3EFD718DC7D7C001B87ED /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EFD518DC7D7C001B87ED /* TweetsViewController.m */; };
+		0FD3EFD818DC7D7C001B87ED /* TweetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FD3EFD618DC7D7C001B87ED /* TweetsViewController.xib */; };
+		0FD3EFDE18DC86BA001B87ED /* TweetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EFDD18DC86BA001B87ED /* TweetsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		0FD3EA5018D9F7F0001B87ED /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		0FD3EA5118D9F7F0001B87ED /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		0FD3EA5218D9F7F0001B87ED /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		0FD3EFD418DC7D7C001B87ED /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
+		0FD3EFD518DC7D7C001B87ED /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
+		0FD3EFD618DC7D7C001B87ED /* TweetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetsViewController.xib; sourceTree = "<group>"; };
+		0FD3EFDC18DC86BA001B87ED /* TweetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsController.h; sourceTree = "<group>"; };
+		0FD3EFDD18DC86BA001B87ED /* TweetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,11 @@
 				0FD3EA5018D9F7F0001B87ED /* SearchViewController.h */,
 				0FD3EA5118D9F7F0001B87ED /* SearchViewController.m */,
 				0FD3EA5218D9F7F0001B87ED /* SearchViewController.xib */,
+				0FD3EFD418DC7D7C001B87ED /* TweetsViewController.h */,
+				0FD3EFD518DC7D7C001B87ED /* TweetsViewController.m */,
+				0FD3EFD618DC7D7C001B87ED /* TweetsViewController.xib */,
+				0FD3EFDC18DC86BA001B87ED /* TweetsController.h */,
+				0FD3EFDD18DC86BA001B87ED /* TweetsController.m */,
 			);
 			path = HashTagSearchApp;
 			sourceTree = "<group>";
@@ -227,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD3EFD818DC7D7C001B87ED /* TweetsViewController.xib in Resources */,
 				0FD3EA2C18D9F716001B87ED /* InfoPlist.strings in Resources */,
 				0FD3EA3418D9F716001B87ED /* Images.xcassets in Resources */,
 				0FD3EA5418D9F7F0001B87ED /* SearchViewController.xib in Resources */,
@@ -248,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD3EFD718DC7D7C001B87ED /* TweetsViewController.m in Sources */,
 				0FD3EA3218D9F716001B87ED /* AppDelegate.m in Sources */,
 				0FD3EA5318D9F7F0001B87ED /* SearchViewController.m in Sources */,
+				0FD3EFDE18DC86BA001B87ED /* TweetsController.m in Sources */,
 				0FD3EA2E18D9F716001B87ED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +465,7 @@
 				0FD3EA4C18D9F716001B87ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FD3EA4D18D9F716001B87ED /* Build configuration list for PBXNativeTarget "HashTagSearchAppTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +474,7 @@
 				0FD3EA4F18D9F716001B87ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

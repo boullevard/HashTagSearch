@@ -5,8 +5,11 @@
 //  Created by Nabil Mouzannar on 3/19/14.
 //  Copyright (c) 2014 Nabil Mouzannar. All rights reserved.
 //
+// quesiton: how can i have the cell in tableview editable ie: able to DELETE them
+
 
 #import "SearchViewController.h"
+#import "TweetsViewController.h"
 
 @interface SearchViewController () <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
 
@@ -24,7 +27,7 @@
     if (self) {
         //initialize a NSMutable array to hold the last 10 searches
         self.searchTextArray = [[NSMutableArray alloc] initWithCapacity:10];
-        
+  
         //populate table view with saved searches in NSUserDefaults if it is not empty
         if (self.retrieveSearchTextFromNSUSerDefaults != NULL)
         {
@@ -89,12 +92,24 @@
     }
 
     cell.textLabel.text = self.searchTextArray[indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.searchTextArray count]; //return size of the array
+}
+
+#pragma mark - UITableView Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    TweetsViewController *viewController = [[TweetsViewController alloc] initWithNibName:@"TweetsViewController" bundle:Nil];
+    viewController.searchTerm = [self.searchTextArray objectAtIndex:indexPath.row];
+    viewController.view.backgroundColor = [UIColor grayColor];
+    [self.navigationController pushViewController:viewController animated:YES]; //question how did we get self.navigationController
 }
 
 - (void)didReceiveMemoryWarning
