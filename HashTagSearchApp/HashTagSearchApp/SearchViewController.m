@@ -25,12 +25,11 @@
         //initialize a NSMutable array to hold the last 10 searches
         self.searchTextArray = [[NSMutableArray alloc] initWithCapacity:10];
         
+        //populate table view with saved searches in NSUserDefaults if it is not empty
         if (self.retrieveSearchTextFromNSUSerDefaults != NULL)
         {
-            NSLog(@"retrieveSearchTextFromNSUSerDefaults %i",[self.retrieveSearchTextFromNSUSerDefaults count]);
             self.searchTextArray = self.retrieveSearchTextFromNSUSerDefaults;
         }
-
     }
     return self;
 }
@@ -49,7 +48,6 @@
     //Call to saveSearchText to the saveSearchTExtArray
     [self saveSearchTextToArray: self.userInputSearchText];
     [searchBar resignFirstResponder];//dismisses keyboard
-    
 }
 
 - (void) saveSearchTextToArray:(NSString *) searchText
@@ -64,15 +62,15 @@
     //Save user searches to NSUserDefaults
     [self saveSearchTextToNSUSerDefaults: self.searchTextArray];
 }
-- (void) saveSearchTextToNSUSerDefaults:(NSArray *) searchTextArray
+
+- (void) saveSearchTextToNSUSerDefaults:(NSArray *) searchTextArray //Save array to NsUserDefaults
 {
     NSUserDefaults *searches = [NSUserDefaults standardUserDefaults]; //why couldnt i init this in viewDidLoad
     [searches setObject:searchTextArray forKey:@"searchTextArray"];
     [searches synchronize];
-    NSLog(@"saveSearchTextToNSUSerDefaults userInputSearchText: %i.",[searchTextArray count]);
 }
 
-- (NSMutableArray *) retrieveSearchTextFromNSUSerDefaults {
+- (NSMutableArray *) retrieveSearchTextFromNSUSerDefaults { //Retrieve Search Array
     NSUserDefaults *searches = [NSUserDefaults standardUserDefaults];
     return [searches objectForKey:@"searchTextArray"];
 }
@@ -97,7 +95,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.searchTextArray count]; //return size of the array
-    
 }
 
 - (void)didReceiveMemoryWarning
