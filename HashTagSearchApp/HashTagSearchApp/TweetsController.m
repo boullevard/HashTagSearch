@@ -24,7 +24,8 @@
 
 - (void)fetchTweetsWithCompletionBlock:(void (^)(BOOL success))completionBlock
 {
-    NSString *twitterEndpoint = @"https://api.twitter.com/1.1/search/tweets.json?q=sxsw";
+    NSString *twitterEndpoint = @"https://api.twitter.com/1.1/search/tweets.json?q=%23sxsw14&count=10";
+    
     
     NSURL *URL = [NSURL URLWithString:twitterEndpoint];
     NSLog(@"fetchTweetsWithCompletionBlock");
@@ -41,7 +42,7 @@
             completionBlock (YES);
         }
         else{
-            NSLog(@"Status code is %i ",httpResponse.statusCode);
+            NSLog(@"Status code is %@ ",httpResponse.allHeaderFields);
             completionBlock (NO);
         }
     }];
