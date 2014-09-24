@@ -40,6 +40,7 @@
 		0FD3F00718DF685B001B87ED /* BAVPlistNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EFF818DF685B001B87ED /* BAVPlistNode.m */; };
 		0FD3F00818DF685B001B87ED /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EFFA18DF685B001B87ED /* JSONSyntaxHighlight.m */; };
 		0FD3F00918DF685B001B87ED /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3EFFC18DF685B001B87ED /* STHTTPRequest.m */; };
+		0FF5122E18E6FF2A007F9478 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5122D18E6FF2A007F9478 /* UserDefaultsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		0FD3EFFA18DF685B001B87ED /* JSONSyntaxHighlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONSyntaxHighlight.m; sourceTree = "<group>"; };
 		0FD3EFFB18DF685B001B87ED /* STHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHTTPRequest.h; sourceTree = "<group>"; };
 		0FD3EFFC18DF685B001B87ED /* STHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHTTPRequest.m; sourceTree = "<group>"; };
+		0FF5122C18E6FF2A007F9478 /* UserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsManager.h; sourceTree = "<group>"; };
+		0FF5122D18E6FF2A007F9478 /* UserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 				0FD3EA5018D9F7F0001B87ED /* SearchViewController.h */,
 				0FD3EA5118D9F7F0001B87ED /* SearchViewController.m */,
 				0FD3EA5218D9F7F0001B87ED /* SearchViewController.xib */,
+				0FF5122C18E6FF2A007F9478 /* UserDefaultsManager.h */,
+				0FF5122D18E6FF2A007F9478 /* UserDefaultsManager.m */,
 				0FD3EFD418DC7D7C001B87ED /* TweetsViewController.h */,
 				0FD3EFD518DC7D7C001B87ED /* TweetsViewController.m */,
 				0FD3EFD618DC7D7C001B87ED /* TweetsViewController.xib */,
@@ -376,6 +381,7 @@
 				0FD3F00418DF685B001B87ED /* STTwitterOAuth.m in Sources */,
 				0FD3F00818DF685B001B87ED /* JSONSyntaxHighlight.m in Sources */,
 				0FD3EFDE18DC86BA001B87ED /* TweetsController.m in Sources */,
+				0FF5122E18E6FF2A007F9478 /* UserDefaultsManager.m in Sources */,
 				0FD3EA2E18D9F716001B87ED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

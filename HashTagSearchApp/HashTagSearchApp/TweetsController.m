@@ -22,6 +22,9 @@
     return self;
 }
 
+//    STTwitterAPI *twitter = [STTwitterAPI twitterAPIAppOnlyWithConsumerKey:@"hwrttolDROMvECG0JOYnuw"
+//                                                            consumerSecret:@"5tcvsIFYEGsurmL2sKDcp7RAcOROI8YJLTVlpudezk"];
+
 - (void)fetchTweetsWithCompletionBlock:(void (^)(BOOL success))completionBlock
 {
     NSString *twitterEndpoint = @"https://api.twitter.com/1.1/search/tweets.json?q=%23sxsw14&count=10";

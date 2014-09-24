@@ -12,10 +12,11 @@
 
 @interface TweetsViewController ()
 
-@property (nonatomic, strong) IBOutlet UITableView *tableView; //link this file to the table view
+@property (nonatomic, weak) IBOutlet UITableView *tableView; //link this file to the table view
 @property (strong, nonatomic) NSMutableArray *twitterFeed;
-@property(nonatomic,strong) TweetsController *tweetsController;
-@property (nonatomic, strong) STTwitterAPI *twitter;
+@property (nonatomic, strong) TweetsController *tweetsController;
+
+@property (nonatomic, strong) STTwitterAPI *twitter; // delete
 
 @end
 
@@ -36,40 +37,24 @@
     // Do any additional setup after loading the view from its nib.
 
     self.title = [NSString stringWithFormat:@"HashTag search for %@", self.searchTerm];
-    self.searchTermTextField.text = self.searchTerm;
     
     self.tweetsController = [[TweetsController alloc] init];
     [self updateContent];
 }
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark
+
 - (void)updateContent
 {
-    STTwitterAPI *twitter = [STTwitterAPI twitterAPIAppOnlyWithConsumerKey:@"hwrttolDROMvECG0JOYnuw"
-                                                            consumerSecret:@"5tcvsIFYEGsurmL2sKDcp7RAcOROI8YJLTVlpudezk"];
-    NSString *errorCode;
-    NSString *myResults;
-    [twitter verifyCredentialsWithSuccessBlock:^(NSString *bearerToken) {
+    [self.tweetsController fetchTweetsWithCompletionBlock:^(BOOL success) {
         
-    [twitter _getSearchTypeaheadQuery:@"sxsw14" resultType:myResults sendErrorCodes:errorCode
-   
-   
-                                  successBlock:^(NSArray *statuses) {
-                                      
-                                                self.twitterFeed = [NSMutableArray arrayWithArray:statuses];
-                                    
-                                                [self.tableView reloadData];
-                                      
-                                  } errorBlock:^(NSError *error) {
-                                      
-                                      NSLog(@"%@", error.debugDescription);
-                                      
-                                  }];
-        
-    } errorBlock:^(NSError *error) {
-        
-        NSLog(@"%@", error.debugDescription);
-        
-    }];
+    }];    
 }
 
 //required functions (2) for UITableViewDataSource
@@ -85,21 +70,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = self.twitterFeed[indexPath.row][@"text"];
+    cell.textLabel.text = @"hi";
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"count: %d", [self.twitterFeed count]);
     return [self.twitterFeed count];
-}
-
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

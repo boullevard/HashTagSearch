@@ -10,9 +10,6 @@
 
 @interface TweetsViewController : UIViewController
 
-@property (nonatomic,strong) NSString *searchTerm;
-@property (nonatomic,strong) IBOutlet UITextField *searchTermTextField;
-
-- (void) updateContent;
+@property (nonatomic, strong) NSString *searchTerm;
 
 @end
